@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat.ttf")
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+/* Menu */
+#btn-mobile {
+    opacity: 0;
+}
+.menu {
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    background: var(--principal);
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    margin-right: 130px;
+}
+
+.btn {
+    padding: 10px 39px 10px 39px;
+    margin-top: 20px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: 0.5s;
+
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+
+}
+nav li {
+    font-size: 20px;
+    padding: 0px 12px 12px 12px;
+    list-style-type: none;
+    transition: 0.2s;
+
+}
+nav li:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 4px white;
+        transition: 0.2s;
+}
+.menu img {
+    margin-top: 2px;
+    width: 66px;
+    margin-left: 20px;
+
+}
+.menuScroll {
+    background-color:  #FAFAFB;
+    position: fixed;
+    animation: anim2 1s;
+    top: 0;
+    z-index: 1000000000000;
+}
+@keyframes anim2 {
+    to {
+       top: 0;
+    }
+    from {
+        top: -200px;
+    }
+}
+
+/* Index */
+.index {
+min-height: 876px;
+background-image: linear-gradient(180deg, #B3C5D7 0%, #FAFBFB 99.97%, #FFFFFF 99.98%, #1E1E1E 99.99%, rgba(255, 255, 255, 0) 100%);;
+}
+.index-textos {
+   
+    font-family: Montserrat;
+    padding: 80px;
+}
+.lados {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.lado-esquerdo-index {
+    width: 46%;
+}
+.lado-esquerdo-index h1{
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1E1E1E;
+}
+.lado-esquerdo-index span {
+    font-size: 30px;
+    line-height: 46px;
+    color: rgba(30, 30, 30, 0.7);
+    margin-bottom: 10px;
+}
+
+.lado-esquerdo-index p {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    color: rgba(30, 30, 30, 0.67);
+    width: 115%;
+    margin-top: 20px;
+}
+.lado-esquerdo-index p:nth-child(2){
+    margin-top: 13px;
+
+}
+.lado-direito-index {
+    min-height: 341px;
+    margin-left: 109px;
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.lado-direito-index a {   
+    width: 89%;
+    margin-top: -55px;
+    text-align: center;
+    background: #E8A700;
+    border: 3px solid #E8A700;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+
+}
+.lado-direito-index a:hover {
+    box-shadow: 0 0 22px #E8A700;
+    transition: 0.5s;
+}
+.lado-direito-index img {
+    
+    width: 680px;
+
+    max-width: 100%;
+}
+/* Sobre mim  */
+.imagens img {
+    
+    margin-left: 50px;
+    position: absolute;
+    max-width: 100%;
+}
+.imagens img:nth-child(2){
+    margin-left: 92px;
+    margin-top: 18px;
+}
+.sobre-mim {
+   
+    display: flex;
+    min-height: 586px;
+    background-color: #FAFAFB;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.lado-esquerdo-sobre {
+    width: 618px;
+    max-width: 100%;
+    min-height: 414px;
+}
+.lado-direito-sobre {
+
+    font-family: Montserrat;
+    width: 50%;
+}
+.lado-direito-sobre h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 98px;
+    color: #1E1E1E;
+}
+.lado-direito-sobre p {
+    font-size: 30px;
+    padding-right: 34px;
+    line-height: 37px;
+    color: rgba(30, 30, 30, 0.67);
+}
+/* Porque me escolher? */
+.pq {
+    font-family: Montserrat;
+    background-color: #FAFAFB;
+    padding-right: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.lado-esquerdo-pq {
+    max-width: 100%;
+    width: 582px;
+}
+.lado-esquerdo-pq h1 {
+    font-weight: 600;
+    width: 100%;
+    font-size: 80px;
+    line-height: 98px;
+    color: #1E1E1E; 
+}
+.quadradinhos {
+    margin-top: 62px;
+    width: 544px;
+    max-width: 100%;
+}
+.quadradinho {
+    max-width: 100%;
+    padding-left: 25px;
+    width: 461px;
+    height: 187px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.quadradinho:nth-child(1) {
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 
+}
+.quadrado-icons {
+    width: 73px;
+    height: 72px;
+    background: #B3C5D7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quadradinho h2{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #1E1E1E;
+}
+.quadradinho p {
+    max-width: 82%;
+    width: 366px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(30, 30, 30, 0.67);
+    word-break: break-word;
+}
+.textos-quadradinho {
+    max-width: 100%;
+    margin-left: 18px;
+}
+
+.lado-direito-pq img {
+    max-width: 100%;
+    margin-top: 263px;
+}
+/* Serviços */
+.servico {
+    min-height: 600px;
+    background-color: #FAFAFB;
+    padding-top: 71px;
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servico h1 {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 98px;
+    color: #1E1E1E;
+}
+.servico p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(30, 30, 30, 0.67);
+}
+.quadrados {
+    padding-left: 105px;
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.quadrado {
+    max-width: 100%;
+    margin-bottom: 86px;
+    width: 344px;
+    display: flex;
+    height: 63px;
+    align-items: center;
+}
+.quadicon {
+    display: flex;
+    width: 63px;
+    height: 63px;
+    background: #B3C5D7;
+    align-items: center;
+    justify-content: center;
+}
+.quadrado h2 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    margin-left: 15px;
+    color: #1E1E1E;
+}
+/* Espaço do paciente  */
+.paciente {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFB;
+    font-family: Montserrat;
+
+}
+.paciente h1 {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 98px;
+    color: #1E1E1E;
+}
+.fotos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 19px;
+}
+.fotos img {
+    max-width: 100%;
+    margin-bottom: 20px;
+
+}
+/* Formulario */
+.formulario {
+    width: 100%;
+    background-color: #FAFAFB;
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario h1 {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 98px;
+    color: #1E1E1E;
+}
+form {
+    max-width: 80%;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    width: 750px;
+    min-height: 422px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 55px 10px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+form h2 {
+    max-width: 80%;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 20px;
+    color: #1E1E1E;
+}
+form span {
+    max-width: 80%;
+    width: 460px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color: #7392B7;
+}
+.nome {
+    max-width: 80%;
+
+    margin-top: 66px;
+    border: none;
+    border-bottom: 2px solid #7392B7;
+    padding-bottom: 10px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    width: 279px;
+    color: rgba(30, 30, 30, 0.83);
+}
+.nome:nth-child(1) {
+    margin-right: 53px;
+}
+.enviar {
+    max-width: 80%;
+
+    margin-top: 26px;
+    background: #7392B7;
+    border-radius: 50px;
+    width: 615px;
+    height: 49px;
+    border: none;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    transition: 0.5s;
+
+}
+.enviar:hover {
+    box-shadow: 0 0 22px #7392B7;
+    color: #7392B7;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+}

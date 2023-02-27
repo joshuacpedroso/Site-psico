@@ -1,0 +1,22 @@
+.lado-esquerdo-index h1 {
+font-size: 38px;
+}
+.quadrado {
+    max-width: 100%;
+   
+    width: 255px;
+  
+}
+.lado-esquerdo-pq h1 {
+    font-size: 45px;
+}
+.quadradinho p {
+    max-width: 100%;
+    width: 219px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(30, 30, 30, 0.67);
+    word-break: break-word;
+    padding: 20px;
+}
